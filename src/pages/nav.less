@@ -1,0 +1,28 @@
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .item {
+    &.active {
+      font-weight: bold;
+      background-color: #87CEFA;
+      color: #fff;
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+
+    border-top: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+    flex-grow: 1;
+    text-align: center;
+  }
+}

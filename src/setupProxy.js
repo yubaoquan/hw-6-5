@@ -2,12 +2,12 @@ const { createProxyMiddleware  } = require('http-proxy-middleware');
 
 module.exports = function setupProxy(app) {
   app.use(
-    '/toutiao/index',
+    '/news',
     createProxyMiddleware({
       target: 'https://v.juhe.cn',
       changeOrigin: true,
-      pathrewrite: {
-
+      pathRewrite: {
+        '^/news': '/toutiao/index'
       }
     })
   )

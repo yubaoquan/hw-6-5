@@ -1,13 +1,11 @@
-import Home from './pages/home/index'
-import News from './pages/news/index'
-import Me from './pages/me/index'
+import Index from './pages/index'
+import Other from './pages/other/index'
 import { Switch, Route, } from "react-router-dom";
 
 
 export default function RouteConfig() {
   return <Switch>
-    <Route path="/" exact component={Home} />
-    <Route path="/me" component={Me}/>
-    <Route path="/news" component={News} />
+    <Route path="/home" component={Index} />
+    <Route path="/other" component={Other}/>
   </Switch>
 }
