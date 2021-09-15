@@ -10,6 +10,9 @@
     "cordova-plugin-geolocation": {
       "GPS_REQUIRED": "true",
       "PACKAGE_NAME": "com.ybq"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.ybq"
     }
   },
   "dependent_plugins": {}
