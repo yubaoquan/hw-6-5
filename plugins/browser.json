@@ -12,9 +12,5 @@
       "PACKAGE_NAME": "com.ybq"
     }
   },
-  "dependent_plugins": {},
-  "modules": [],
-  "plugin_metadata": {
-    "cordova-plugin-geolocation": "4.1.0"
-  }
+  "dependent_plugins": {}
 }

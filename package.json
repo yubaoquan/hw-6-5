@@ -161,6 +161,11 @@
   "cordova": {
     "platforms": [
       "browser"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      }
+    }
   }
 }

@@ -10,5 +10,16 @@ module.exports = function setupProxy(app) {
         '^/news': '/toutiao/index'
       }
     })
+  );
+
+  app.use(
+    '/weather',
+    createProxyMiddleware({
+      target: 'https://devapi.qweather.com',
+      changeOrigin: true,
+      pathRewrite: {
+        '^/weather': '/v7/weather/3d'
+      }
+    })
   )
 }
